@@ -32,7 +32,7 @@ class LoginForm extends Component {
 
   renderButton () {
     if (this.state.loading) return <Spinner size={'small'}/>
-    else return <Button onPress={this.onButtonPress.bind(this)}>Login</Button>
+    else return <Button onPress={this.onButtonPress.bind(this)} flex={1}>Login</Button>
   }
 
   render () {
